@@ -106,9 +106,7 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
-        .gallery-image-container {
-            aspect-ratio: 4 / 3;
-        }
+        
         .gallery-image {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             width: 100%;
@@ -268,7 +266,8 @@
                     <div class="flex flex-col md:flex-row">
                         <div class="md:w-1/2 slider-container">
                             <div class="slider-wrapper">
-                                <div class="slider-slide" style="background-image: url('Punam_Enclave_Hero.jpg'); background-size: cover; background-position: center 85%;"></div>
+                                <div class="slider-slide hidden md:block" style="background-image: url('Punam_Enclave_Hero.jpg'); background-size: cover; background-position: center 85%;"></div>
+                                <div class="slider-slide block md:hidden"><img src="Punam_Enclave_Hero.jpg" alt="Punam Enclave Exterior" class="w-full h-full object-contain"></div>
                                 <div class="slider-slide"><img src="Punam_Enclave_3D.jpg" alt="Punam Enclave 3D Plan" class="w-full h-full object-contain"></div>
                                 <div class="slider-slide"><img src="Punam_Enclave_Floorplan.jpg" alt="Punam Enclave Floorplan" class="w-full h-full object-contain"></div>
                             </div>
@@ -344,28 +343,28 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="animate-on-scroll fade-in-up gallery-image-container">
-                        <img src="_DSC0116.jpg" alt="Gallery Image 1" class="rounded-lg shadow-md gallery-image lg:gallery-image-expandable">
+                        <img src="_DSC0116.jpg" alt="Gallery Image 1" class="rounded-lg shadow-md gallery-image">
                     </div>
                      <div class="animate-on-scroll fade-in-up gallery-image-container" style="transition-delay: 100ms;">
-                        <img src="_DSC0115.jpg" alt="Gallery Image 2" class="rounded-lg shadow-md gallery-image lg:gallery-image-expandable">
+                        <img src="_DSC0115.jpg" alt="Gallery Image 2" class="rounded-lg shadow-md gallery-image">
                     </div>
                      <div class="animate-on-scroll fade-in-up gallery-image-container" style="transition-delay: 200ms;">
-                        <img src="_DSC0117.jpg" alt="Gallery Image 3" class="rounded-lg shadow-md gallery-image lg:gallery-image-expandable">
+                        <img src="_DSC0117.jpg" alt="Gallery Image 3" class="rounded-lg shadow-md gallery-image">
                     </div>
                      <div class="animate-on-scroll fade-in-up gallery-image-container" style="transition-delay: 300ms;">
-                        <img src="_DSC0112.jpg" alt="Gallery Image 4" class="rounded-lg shadow-md gallery-image lg:gallery-image-expandable">
+                        <img src="_DSC0118.jpg" alt="Gallery Image 4" class="rounded-lg shadow-md gallery-image">
                     </div>
                      <div class="animate-on-scroll fade-in-up gallery-image-container" style="transition-delay: 400ms;">
-                        <img src="_DSC0102.jpg" alt="Gallery Image 5" class="rounded-lg shadow-md gallery-image lg:gallery-image-expandable">
+                        <img src="_DSC0096.jpg" alt="Gallery Image 5" class="rounded-lg shadow-md gallery-image">
                     </div>
                      <div class="animate-on-scroll fade-in-up gallery-image-container" style="transition-delay: 500ms;">
-                        <img src="_DSC0105.jpg" alt="Gallery Image 6" class="rounded-lg shadow-md gallery-image lg:gallery-image-expandable">
+                        <img src="_DSC0105.jpg" alt="Gallery Image 6" class="rounded-lg shadow-md gallery-image">
                     </div>
                      <div class="animate-on-scroll fade-in-up gallery-image-container" style="transition-delay: 600ms;">
-                        <img src="_DSC0118.jpg" alt="Gallery Image 7" class="rounded-lg shadow-md gallery-image lg:gallery-image-expandable">
+                        <img src="_DSC0112.jpg" alt="Gallery Image 7" class="rounded-lg shadow-md gallery-image">
                     </div>
                      <div class="animate-on-scroll fade-in-up gallery-image-container" style="transition-delay: 700ms;">
-                        <img src="_DSC0096.jpg" alt="Gallery Image 8" class="rounded-lg shadow-md gallery-image lg:gallery-image-expandable">
+                        <img src="_DSC0102.jpg" alt="Gallery Image 8" class="rounded-lg shadow-md gallery-image">
                     </div>
                 </div>
             </div>
@@ -691,7 +690,7 @@
             consultationForm.addEventListener('submit', (e) => {
                 e.preventDefault();
                 
-                const scriptURL = "https://script.google.com/macros/s/AKfycbzJMc-VcUxchSEUbcg0eBtQfcb5RvftC3JhS8Z5aRydud3MKHqyvLuJk2CBPrIQe4E56w/exec";
+                const scriptURL = "https://script.google.com/macros/s/AKfycbz9jxHZko-1RV62KEpSQggikGbwkqFse0BMsQlF0qIHTa3cN5xjtU0qA596zZrfoHh9BA/exec";
                 
                 submitButton.disabled = true;
                 submitButton.textContent = 'Submitting...';
